@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Closure</title>
+    </head>
+    <body>
+        <script>
+            function Display(){
+                var s = "Hello";                
+                function Display2(){
+                    var s2 = "World";
+                    document.write(s + " " +s2);
+                }
+                return Display2();
+            }
+
+            Display();
+        </script>
+    </body>
+</html>

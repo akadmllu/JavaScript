@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Form Validation of Text Fields</title>
+    </head>
+    <body>
+        <script>
+            function validate(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if(email == ""){
+                    alert("Email is Mandatory");
+                    document.getElementById("email").focus();
+                    return false;
+                }
+                else if(password == ""){
+                    alert("Password is Mandatory");
+                    document.getElementById("password").focus();
+                    return false;
+                }
+                else{
+                    alert("Validation Successfull");
+                    return true;
+                }
+            }
+        </script>
+        <h3>User Registration : </h3>
+        <form id="myform" onSubmit="return validate()">
+            Email : <input type="text" name="email" id="email">
+            Password : <input type="password" name="password" id="password">
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>

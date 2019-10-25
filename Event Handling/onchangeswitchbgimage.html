@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>On Change Background Image</title>
+    </head>
+    <body>
+        <script>
+            function handleOnChangeEvent(x){
+                document.body.style.backgroundImage = "url('"+x+"')";
+            }
+        </script>
+        <select onchange="handleOnChangeEvent(this.value)">
+            <option value="">Select a Image</option>
+            <option value="images/maven.jpeg">Maven</option>
+            <option value="images/devops.png">Devops</option>
+            <option value="images/csharp.png">C#</option>
+        </select>
+    </body>
+</html>

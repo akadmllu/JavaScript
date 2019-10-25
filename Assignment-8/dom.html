@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Dom</title>
+    </head>
+    <body>
+        <script>
+            function handleAddEvent(){
+                var parent = document.getElementById("parent");
+                var child = document.createElement("p");
+                child.append("TV : 500$");
+                parent.appendChild(child);
+            }
+            function handleDeleteEvent(){
+                var parent = document.getElementById("parent");
+                var child = document.getElementById("cellphone");
+                parent.removeChild(child);
+            }
+        </script>
+        <div id="parent">
+            <p id="laptop">laptop : 1000$</p>
+            <p id="cellphone">Cellphone : 300$</p>
+        </div>
+        <input type="button" value="add" onclick="handleAddEvent()">
+        <input type="button" value="delete" onclick="handleDeleteEvent()">
+    </body>
+</html>

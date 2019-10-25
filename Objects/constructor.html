@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Custom Object Creation using Literal Constructor</title>
+    </head>
+    <body>
+        <script>
+            
+            var blogPost = {
+                title : "Java",
+                text : "Is a Object Oriented Language",
+                DisplayDetails : function(){
+                    document.write(this.title + "<br/>");
+                    document.write(this.text + "<br/>");
+                }
+            }
+            blogPost.DisplayDetails();
+        </script>
+    </body>
+</html>

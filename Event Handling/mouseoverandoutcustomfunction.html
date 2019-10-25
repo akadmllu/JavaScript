@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Mouse up and Mouse down Event</title>
+    </head>
+    <body>
+        <script>
+            function handleMouseOverEvent(x){
+                x.style.color = "red";
+                x.style.backgroundColor = "yellow";
+                x.innerHTML = "MOUSE OVER"
+            }
+            
+            function handleMouseOutEvent(x){
+                x.style.color = "yellow";
+                x.style.backgroundColor = "blue";
+                x.innerHTML = "MOUSE OUT"
+            }
+        </script>
+        <p onmouseover="handleMouseOverEvent(this)" onmouseout="handleMouseOutEvent(this)">Mouse up/down</p>
+    </body>
+</html>

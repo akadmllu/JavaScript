@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Displaying Object using Function</title>
+    </head>
+    <body>
+        <script>
+            function displayBlogPost(){
+                document.write(this.title + "<br/>");
+                document.write(this.text + "<br/>");
+                document.write(this.category + "<br/>");
+            }
+            function addCategory(category){
+                this.category = category;
+            }
+            function blogPost(title,text){
+                this.title = title;
+                this.text = text;
+                this.addCategory = addCategory;
+                this.displayBlogPost = displayBlogPost;
+            }
+
+            var bp1 = new blogPost("JavaScript","JavaScript is Awesome");
+            bp1.addCategory("UI Component")
+            bp1.displayBlogPost();
+        </script>
+    </body>
+</html>

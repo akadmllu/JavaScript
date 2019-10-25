@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body onload="contionousDisplay()">
+        <script>
+            function contionousDisplay(){
+                setInterval(displayDate,1000);
+                //clearInterval()
+            }
+            function displayDate(){
+                var d = new Date();
+                //var x = d.toLocaleTimeString();
+                //var x = d.toLocaleDateString();
+                var x = d.toLocaleString();
+                document.getElementById("DateInfo").innerHTML = x;
+            }
+        </script>
+        Current Date : <br/>
+        <p id="DateInfo"></p>
+    </body>
+</html>

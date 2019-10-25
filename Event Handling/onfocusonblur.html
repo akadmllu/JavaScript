@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>On Change Background Image</title>
+    </head>
+    <body>
+        <script>
+            function handleOnFocus(x){
+                x.style.color = "red";
+                x.style.backgroundColor = "blue";
+            }
+            function handleOnBlur(x){
+                x.style.color = "blue";
+                x.style.backgroundColor = "red";
+            }
+        </script>
+        <input type="text" onfocus="handleOnFocus(this)" onblur="handleOnBlur(this)">
+    </body>
+</html>

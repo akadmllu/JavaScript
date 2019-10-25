@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Product Details</title>
+    </head>
+    <body>
+        <script>
+            var objProduct = new function(){
+                this.jID = "100";
+                this.sName = "iPhone XR";
+                this.sDescription = "iPhone XR is a smartphone designed and manufactured by Apple Inc.";
+                this.jPrice = "45000"
+                this.displayProductDetails = function(){
+                    document.write(this.jID + "<br/>");
+                    document.write(this.sName + "<br/>");
+                    document.write(this.sDescription + "<br/>");
+                    document.write(this.jPrice + "<br/>");
+                };
+                this.CalculateDisount = function(jPercent){
+                    var jMultipler = jPercent/100;
+                    var jDiscountAmount = this.jPrice * jMultipler;
+                    var jFinalPrice = this.jPrice - jDiscountAmount;
+                    document.write("Price After Discount : " + jFinalPrice);
+                }
+            }
+            objProduct.displayProductDetails();
+            objProduct.CalculateDisount(20);
+        </script>
+    </body>
+</html>

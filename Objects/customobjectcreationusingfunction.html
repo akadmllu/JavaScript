@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Custom Object Creation using Function</title>
+    </head>
+    <body>
+        <script>
+            function blogPost(title,text){
+                this.title = title;
+                this.text = text;
+            }
+            var bp1 = new blogPost("JavaScript","JavaScript is Awesome");
+            document.write(bp1.title + "<br/>");
+            document.write(bp1.text + "<br/>");
+        </script>
+    </body>
+</html>

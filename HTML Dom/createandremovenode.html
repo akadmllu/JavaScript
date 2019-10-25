@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Dom Create and Remove NOdes</title>
+    </head>
+    <body>
+        <script>
+            function handleAdd(){
+                var parent = document.getElementById("parent");
+                var child = document.createElement("p");
+                child.append("Hello world");
+                parent.appendChild(child);
+            }
+            function handleRemove(){
+                var parent = document.getElementById("parent");
+                var child = document.getElementById("p2");
+                parent.removeChild(child);
+            }
+        </script>
+        <div id="parent">
+            <p id="p1">All the power is within you</p>
+            <p id="p2">You can do anything and everything</p>
+        </div>
+        <input type="button" value="add" onclick="handleAdd()">
+        <input type="button" value="remove" onclick="handleRemove()">
+    </body>
+</html>

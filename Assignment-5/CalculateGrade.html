@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Calculate Grade</title>
+    </head>
+    <body>
+        <script>
+            function GradeCalculator(){
+                var jMaths = parseInt(prompt("Enter the marks in Javascript"));
+                var jPhysics = parseInt(prompt("Enter the marks in Java"));
+                var jChemistry = parseInt(prompt("Enter the marks in .Net"));
+                var jTotal = jMaths+jPhysics+jChemistry;
+                var jAverage = jTotal/3;
+
+                if(jMaths >= 35 && jPhysics >=35 && jChemistry >= 35 ){
+                    document.write("Result : Pass");
+                    if(jAverage > 90){
+                        document.write("Grade : A");
+                    }
+                    else if(jAverage >=70 && jAverage <= 90){
+                        document.write("Grade : B");
+                    }
+                    else{
+                        document.write("Grade : C");
+                    }
+                }else{
+                    document.write("Result : Failed");
+                }
+            }
+            GradeCalculator();
+        </script>
+    </body>
+</html>

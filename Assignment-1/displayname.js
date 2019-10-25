@@ -1,0 +1,1 @@
+document.write("Age : 26")

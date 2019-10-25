@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Custom Singleton Object Creation</title>
+    </head>
+    <body>
+        <script>
+            
+            var blogPost = new function(){
+                this.title = "Java";
+                this.text = "It is Object Oriented";
+                this.DisplayDetails = function(){
+                    document.write(this.title + "<br/>");
+                    document.write(this.text + "<br/>");
+                }
+            }
+
+            // var blogPost = {
+            //     title : "Java",
+            //     text : "Is a Object Oriented Language",
+            //     DisplayDetails : function(){
+            //         document.write(this.title + "<br/>");
+            //         document.write(this.text + "<br/>");
+            //     }
+            // }
+            blogPost.DisplayDetails();
+        </script>
+    </body>
+</html>
